@@ -8,6 +8,7 @@
   --theme-color: #40a5d9;
   --theme-color2: #61bd47;
   --theme-color3: #254559;
+  --bg-lightEF: #EFEDEE;
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -4247,6 +4248,35 @@ textarea.form-control {
   font-style: italic;
 }
 
+
+/*--------------------------------------------------------------------------------*/
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  max-width: 50px;
+}
+.logo div{
+  flex: 1;
+  padding-left: 0.5rem;
+}
+.logo div small {
+  color: var(--theme-color);
+  letter-spacing: 2px;
+}
+.logo div span {
+  color: #a6a6a6;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-size: 11px;
+  display: block;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.bg-lightEF{
+  background-color: #EFEDEE !important;
+}
 .ftco-navbar-light .navbar-nav {
   /* position: relative; */
 }
