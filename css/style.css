@@ -2228,7 +2228,7 @@ h5,
   -webkit-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
-
+  overflow: hidden;
 }
 
 .ftco-navbar-light .navbar-nav .dropdown:hover .dropdown-menu {
@@ -4250,21 +4250,25 @@ textarea.form-control {
 
 
 /*--------------------------------------------------------------------------------*/
-.logo{
+.logo {
   display: flex;
   align-items: center;
 }
-.logo img{
+
+.logo img {
   max-width: 50px;
 }
-.logo div{
+
+.logo div {
   flex: 1;
   padding-left: 0.5rem;
 }
+
 .logo div small {
   color: var(--theme-color);
   letter-spacing: 2px;
 }
+
 .logo div span {
   color: #a6a6a6;
   line-height: 1.1;
@@ -4274,9 +4278,11 @@ textarea.form-control {
   font-weight: 500;
   letter-spacing: 1px;
 }
-.bg-lightEF{
+
+.bg-lightEF {
   background-color: #EFEDEE !important;
 }
+
 .ftco-navbar-light .navbar-nav {
   /* position: relative; */
 }
