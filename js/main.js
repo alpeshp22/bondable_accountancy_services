@@ -7,6 +7,15 @@
 		once: true
 	});
 
+	// Preloader 
+	var browserWindow = $(window);
+	browserWindow.on('load', function () {
+		$('.preloader').delay(300).fadeOut('slow', function () {
+			$(this).remove();
+		});
+	});
+
+	// Imported Header-Footer
 	$("#header").load("header.html");
 	$("#footer").load("footer.html");
 
