@@ -2362,6 +2362,7 @@ h5,
 .ftco-navbar-light .navbar-nav .dropdown:hover .dropdown-menu {
   display: block;
 }
+
 .ftco-navbar-light .navbar-nav>.nav-item>.nav-link {
   font-size: 15px;
   padding-top: 1.7rem;
@@ -2371,7 +2372,8 @@ h5,
   color: rgba(0, 0, 0, 0.8);
   font-weight: 500;
 }
-.ftco-navbar-light .navbar-nav>.nav-item:hover>.nav-link{
+
+.ftco-navbar-light .navbar-nav>.nav-item:hover>.nav-link {
   color: var(--theme-color);
 }
 
@@ -3057,6 +3059,11 @@ textarea.form-control {
   font-weight: 500;
   margin-bottom: 10px;
   font-family: "Poppins", Arial, sans-serif;
+}
+
+.flow-wrap .text h2 a,
+.flow-wrap .text .h2 a {
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .flow-wrap .text span {
@@ -4097,6 +4104,7 @@ textarea.form-control {
 .dbox p a {
   color: var(--gray8C);
 }
+
 .dbox p a:hover {
   color: var(--theme-color);
 }
@@ -4475,6 +4483,7 @@ textarea.form-control {
   color: var(--theme-color);
 
 }
-.newsletter-sec{
+
+.newsletter-sec {
   background-image: url(../images/contact-banner.png);
 }
