@@ -2399,13 +2399,31 @@ h5,
   }
 }
 
+body.home .ftco-navbar-light .navbar-nav>.nav-item>.nav-link.home,
+body.about .ftco-navbar-light .navbar-nav>.nav-item>.nav-link.about,
+body.service .ftco-navbar-light .navbar-nav>.nav-item>.nav-link.service,
+body.contact .ftco-navbar-light .navbar-nav>.nav-item>.nav-link.contact{
+  color: var(--theme-color);
+  position: relative;
+  z-index: 0;
+}
+
 .ftco-navbar-light .navbar-nav>.nav-item>.nav-link.active {
   color: var(--theme-color);
   position: relative;
   z-index: 0;
 }
 
+
 @media (max-width: 991.98px) {
+
+  body.home .ftco-navbar-light .navbar-nav>.nav-item>.nav-link.home,
+  body.about .ftco-navbar-light .navbar-nav>.nav-item>.nav-link.about,
+  body.service .ftco-navbar-light .navbar-nav>.nav-item>.nav-link.service,
+  body.contact .ftco-navbar-light .navbar-nav>.nav-item>.nav-link.contact{
+    color: #fff !important;
+  }
+  
   .ftco-navbar-light .navbar-nav>.nav-item>.nav-link.active {
     color: #fff !important;
   }
@@ -3064,6 +3082,11 @@ textarea.form-control {
 .flow-wrap .text h2 a,
 .flow-wrap .text .h2 a {
   color: rgba(0, 0, 0, 0.8);
+}
+
+.flow-wrap .text h2 a:hover,
+.flow-wrap .text .h2 a:hover {
+  color: var(--theme-color);
 }
 
 .flow-wrap .text span {

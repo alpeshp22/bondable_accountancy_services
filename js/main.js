@@ -16,8 +16,8 @@
 	});
 
 	// Imported Header-Footer
-	$("#header").load("header.html");
-	$("#footer").load("footer.html");
+	$("#header").load("../components/header.html");
+	$("#footer").load("../components/footer.html");
 
 	var slider = function () {
 
