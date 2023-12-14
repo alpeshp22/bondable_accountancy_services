@@ -10,10 +10,11 @@
 	// Preloader 
 	var browserWindow = $(window);
 	browserWindow.on('load', function () {
-		$('.preloader').delay(300).fadeOut('slow', function () {
+		$('.preloader').fadeOut('slow', function () {
 			$(this).remove();
 		});
 	});
+
 
 	// Imported Header-Footer
 	$("#header").load("../components/header.html");

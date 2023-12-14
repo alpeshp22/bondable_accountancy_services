@@ -1,0 +1,129 @@
+/* START WIDTH 991PX */
+@media (max-width: 991px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .ftco-navbar-light {
+        position: sticky;
+        top: 0;
+        background: #ffffff !important;
+
+    }
+
+    .ftco-navbar-light .navbar-brand,
+    .ftco-navbar-light .navbar-toggler {
+        z-index: 1025;
+    }
+
+    .ftco-navbar-light .navbar-toggler[aria-expanded="true"] {
+        color: #ffffff !important;
+    }
+
+    .ftco-navbar-light .navbar-collapse {
+        display: block !important;
+        position: fixed;
+        left: -300px;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        background-color: #fff;
+        padding-top: 77px;
+        border-top: 1px solid var(--theme-color);
+        transition: left 0.3s ease-in-out;
+    }
+
+    .ftco-navbar-light .navbar-collapse .navbar-nav {
+        padding-top: 0;
+        border-top: 1px solid var(--theme-color);
+    }
+
+    .ftco-navbar-light .navbar-collapse.show {
+        left: 0;
+    }
+
+    .ftco-navbar-light .navbar-collapse.show::after {
+        content: '';
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: calc(100% - 300px);
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .hero-wrap.hero-wrap-2,
+    .hero-wrap.hero-wrap-2 .slider-text {
+        height: 300px;
+    }
+
+    .hero-wrap .slider-text .bread {
+        font-size: 40px;
+    }
+
+    .newsletter-sec {
+        background-position: center right !important;
+    }
+
+    .ftco-footer {
+        padding: 3em 0 0 0;
+    }
+
+    .ftco-footer .row.mb-5 {
+        margin-bottom: 0 !important;
+    }
+
+}
+
+/* END 991PX */
+/* START 767PX */
+@media (max-width: 767px) {
+    .slider-hero {
+        height: calc(100vh - 77px);
+    }
+
+    .newsletter-sec .row .d-flex {
+        display: block !important;
+        text-align: center;
+    }
+}
+
+/* END 767PX */
+/* START 575PX */
+@media (max-width: 575px) {
+
+    .heading-section h2,
+    .heading-section .h2 {
+        font-size: 30px;
+    }
+
+    .flow-wrap .text h2,
+    .flow-wrap .text .h2 {
+        font-size: 22px;
+    }
+}
+
+
+/* END 575PX */
+
+/* START 480PX */
+@media (max-width: 480px) {
+    .logo img {
+        max-width: 40px;
+    }
+
+    .navbar-brand small,
+    .navbar-brand .small {
+        font-size: 24px;
+    }
+
+    .logo div span {
+        font-size: 10px;
+    }
+
+    .slider-hero {
+        height: calc(100vh - 70px);
+    }
+}
+
+/* END 480PX */
