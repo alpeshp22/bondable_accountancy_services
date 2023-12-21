@@ -20,7 +20,16 @@
 </head>
 
 <body class="home">
-    <div id="header"></div>
+    <div class="preloader">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <img src="images/bas-loader.gif" class="loader-gif img-fluid" alt="loader-img" />
+    </div>
+    <div class="headerImport"></div>
     <section class="slider-hero">
         <div class="overlay"></div>
         <div class="hero-slider">
@@ -115,7 +124,7 @@
                             <span class="bookkeeping-services-icon"></span>
                         </div>
                         <div class="text">
-                            <h2><a href="services/bookkeeping-services.html">Bookkeeping Services</a></h2>
+                            <h2><a href="bookkeeping-services.html">Bookkeeping Services</a></h2>
                             <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia.</p>
                         </div>
                     </div>
@@ -127,7 +136,7 @@
                             <span class="intenal-audit-icon"></span>
                         </div>
                         <div class="text">
-                            <h2><a href="services/internal-audit-&-assurance-services.html">Internal Audit & Assurance
+                            <h2><a href="internal-audit-&-assurance-services.html">Internal Audit & Assurance
                                     Services</a></h2>
                             <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia.</p>
                         </div>
@@ -140,7 +149,7 @@
                             <span class="financial-statement-icon"></span>
                         </div>
                         <div class="text">
-                            <h2><a href="services/financial-statement-preparation.html">Financial Statement
+                            <h2><a href="financial-statement-preparation.html">Financial Statement
                                     Preparation</a></h2>
                             <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia.</p>
                         </div>
@@ -153,7 +162,7 @@
                             <span class="payroll-services-icon"></span>
                         </div>
                         <div class="text">
-                            <h2><a href="services/payroll-services.html">Payroll Services</a></h2>
+                            <h2><a href="payroll-services.html">Payroll Services</a></h2>
                             <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia.</p>
                         </div>
                     </div>
@@ -165,7 +174,7 @@
                             <span class="management-accounting-icon"></span>
                         </div>
                         <div class="text">
-                            <h2><a href="services/management-accounting.html">Management Accounting</a></h2>
+                            <h2><a href="management-accounting.html">Management Accounting</a></h2>
                             <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia.</p>
                         </div>
                     </div>
@@ -177,7 +186,7 @@
                             <span class="accounting-software-icon"></span>
                         </div>
                         <div class="text">
-                            <h2><a href="services/accounting-software-implementation.html">Accounting Software
+                            <h2><a href="accounting-software-implementation.html">Accounting Software
                                     Implementation</a></h2>
                             <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia.</p>
                         </div>
@@ -524,7 +533,8 @@
                             </div>
                         </div>
                         <div class="col-md-4 d-flex align-items-center">
-                            <p class="mb-0"><a href="contact.html" class="btn btn-white py-md-4 py-3 px-md-5 px-4">Get
+                            <p class="mb-0"><a href="contact.html#ContactSec"
+                                    class="btn btn-white py-md-4 py-3 px-md-5 px-4">Get
                                     Started</a>
                             </p>
                         </div>
@@ -533,13 +543,18 @@
             </div>
         </div>
     </section>
-    <div id="footer"></div>
+    <div class="footerImport"></div>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/tiny-slider.js"></script>
     <script src="js/glightbox.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        // Imported Header-Footer
+        $(".headerImport").load("header.html");
+        $(".footerImport").load("footer.html");
+    </script>
 </body>
 
 </html>

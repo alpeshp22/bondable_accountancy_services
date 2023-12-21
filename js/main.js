@@ -15,11 +15,6 @@
 		});
 	});
 
-
-	// Imported Header-Footer
-	$("#header").load("../components/header.html");
-	$("#footer").load("../components/footer.html");
-
 	var slider = function () {
 
 		var heroSlider = document.querySelectorAll('.hero-slider');

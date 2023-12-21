@@ -19,7 +19,16 @@
 </head>
 
 <body class="contact">
-    <div id="header"></div>
+    <div class="preloader">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <img src="images/bas-loader.gif" class="loader-gif img-fluid" alt="loader-img" />
+    </div>
+    <div class="headerImport"></div>
     <section class="hero-wrap hero-wrap-2" style="background-image: url('images/contact-banner.png')">
         <div class="overlay"></div>
         <div class="container">
@@ -79,7 +88,9 @@
                                                 <div class="text">
                                                     <p>
                                                         <span>Phone:</span>
-                                                        <a href="tel:+919601544411">+91 9601 544411</a>
+                                                        <a href="tel:+919909987196">+91 9909 987196</a>
+                                                        <br>
+                                                        <a href="tel:+919601566149">+91 9601 566149</a>
                                                     </p>
                                                 </div>
                                             </div>
@@ -178,13 +189,18 @@
             </div>
         </div>
     </section>
-    <div id="footer"></div>
+    <div class="footerImport"></div>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/tiny-slider.js"></script>
     <script src="js/glightbox.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        // Imported Header-Footer
+        $(".headerImport").load("header.html");
+        $(".footerImport").load("footer.html");
+    </script>
 </body>
 
 </html>

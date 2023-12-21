@@ -22,7 +22,16 @@
 </head>
 
 <body class="about">
-    <div id="header"></div>
+    <div class="preloader">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <img src="images/bas-loader.gif" class="loader-gif img-fluid" alt="loader-img" />
+    </div>
+    <div class="headerImport"></div>
     <section class="hero-wrap hero-wrap-2" style="background-image: url('images/inner-banner.webp');">
         <div class="overlay"></div>
         <div class="container">
@@ -191,7 +200,8 @@
                             </div>
                         </div>
                         <div class="col-md-4 d-flex align-items-center">
-                            <p class="mb-0"><a href="contact.html" class="btn btn-white py-md-4 py-3 px-md-5 px-4">Get
+                            <p class="mb-0"><a href="contact.html#ContactSec"
+                                    class="btn btn-white py-md-4 py-3 px-md-5 px-4">Get
                                     Started</a>
                             </p>
                         </div>
@@ -200,13 +210,18 @@
             </div>
         </div>
     </section>
-    <div id="footer"></div>
+    <div class="footerImport"></div>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/tiny-slider.js"></script>
     <script src="js/glightbox.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        // Imported Header-Footer
+        $(".headerImport").load("header.html");
+        $(".footerImport").load("footer.html");
+    </script>
 </body>
 
 </html>
