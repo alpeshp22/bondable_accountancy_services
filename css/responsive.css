@@ -50,6 +50,8 @@
         top: 0;
         width: calc(100% - 300px);
         height: 100%;
+        border: 0;
+        border-radius: 0;
         background-color: rgba(0, 0, 0, 0.4);
         transition: all 0.3s ease-in-out;
         z-index: 1024;
