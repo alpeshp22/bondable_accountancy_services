@@ -84,7 +84,7 @@
     }
 
     .ftco-section {
-        overflow-y: visible;
+        overflow: hidden;
     }
 
     .slider-hero {
