@@ -2390,6 +2390,10 @@ h5,
   color: var(--theme-color);
 }
 
+.ftco-navbar-light .navbar-collapse .sidebar-overlay {
+  display: none;
+}
+
 .ftco-navbar-light .navbar-nav>.nav-item>.nav-link.m-show {
   display: none;
 }

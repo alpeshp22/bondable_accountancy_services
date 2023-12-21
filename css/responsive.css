@@ -42,14 +42,15 @@
         left: 0;
     }
 
-    .ftco-navbar-light .navbar-collapse.show::after {
-        content: '';
+    .ftco-navbar-light .navbar-collapse.show .sidebar-overlay {
+        display: block;
         position: fixed;
         right: 0;
         top: 0;
         width: calc(100% - 300px);
         height: 100%;
         background-color: rgba(0, 0, 0, 0.4);
+        transition: all 0.3s ease-in-out;
     }
 
     .hero-wrap.hero-wrap-2,
@@ -78,17 +79,27 @@
 /* END 991PX */
 /* START 767PX */
 @media (max-width: 767px) {
+    .ftco-navbar-light .navbar-brand {
+        max-width: 7em;
+    }
+
+    .ftco-section {
+        overflow-y: visible;
+    }
+
     .slider-hero {
-        height: calc(100vh - 77px);
+        height: calc(100vh - 74px);
     }
 
     .newsletter-sec .row .d-flex {
         display: block !important;
         text-align: center;
     }
+
 }
 
 /* END 767PX */
+
 /* START 575PX */
 @media (max-width: 575px) {
 
@@ -127,3 +138,13 @@
 }
 
 /* END 480PX */
+
+/* START 375PX */
+@media (max-width: 375px) {
+    .ftco-navbar-light .navbar-brand {
+        max-width: 6em;
+    }
+}
+
+
+/* START 375PX */
