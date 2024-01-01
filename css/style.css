@@ -795,9 +795,9 @@ progress {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-  -webkit-appearance: none;
+  /* -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+  appearance: none; */
   border-radius: 0.25rem;
   -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -2842,6 +2842,10 @@ body.contact .ftco-navbar-light .navbar-nav>.nav-item>.nav-link.contact {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.form-control.error {
+  border-color: red;
+}
+
 .form-control::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: rgba(0, 0, 0, 0.3) !important;
@@ -3974,8 +3978,10 @@ textarea.form-control {
 }
 
 .staff .ftco-social li a {
+  display: inline-block;
   width: 34px;
   height: 34px;
+  line-height: 35px;
   background: var(--theme-color);
   color: #fff;
   border-radius: 50%;
@@ -4223,13 +4229,43 @@ textarea.form-control {
   font-weight: 600;
 }
 
+.input-group {
+  position: relative;
+  display: flex;
+}
+
 .contactForm .form-group {
   width: 100%;
   margin-bottom: 10px;
 }
 
+.contactForm .input-group select {
+  width: 80px;
+  margin-right: 5px;
+}
+
+.contactForm .input-group input {
+  flex: 1;
+}
+
 .contactForm .form-control {
   border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.contactForm .form-control.error {
+  border-color: red;
+}
+
+.error-text {
+  font-size: 13px;
+  color: red;
+  font-weight: 400;
+  display: none;
+}
+
+.form-group.error .error-text,
+.input-group.error+.error-text {
+  display: block;
 }
 
 .block-21 .blog-img {
@@ -4589,4 +4625,16 @@ textarea.form-control {
 
 .newsletter-sec {
   background-image: url(../images/contact-banner.png);
+}
+
+.social-media a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  font-size: 22px;
+}
+
+.form-group .iti {
+  width: 100%;
 }
