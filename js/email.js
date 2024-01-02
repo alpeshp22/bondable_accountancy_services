@@ -7,18 +7,21 @@ const countryCode = document.getElementById('countryCode');
 const message = document.getElementById('message');
 
 function sendEmail() {
-    const bodyMsg = `<b>Name:</b> ${name.value}<br><hr> <b>Company Name:</b> ${companyName.value}<br><hr> <b>Email:</b> ${email.value}<br><hr> <b>Phone:</b> ${countryCode.value}-${phone.value}<br><hr> <b>Message:</b> ${message.value}<br><hr>`;
+    const bodyMsg = `<div style="border-radius:10px;overflow:hidden;margin:10px;">
+   <div style="text-align: center;background-color: #d9f0fc;padding: 13px 0;"><img src="https://bondableaccountancyservices.netlify.app/images/logo.png" style="max-width: 150px;"></div>
+<h3 style="margin: 10px 0;">User Details:</h3><hr>
+    <b>Name:</b> ${name.value}<br><hr> <b>Company Name:</b> ${companyName.value}<br><hr> <b>Email:</b> ${email.value}<br><hr> <b>Phone:</b> ${countryCode.value}-${phone.value}<br><hr> <b>Message:</b> ${message.value}<br><hr></div>`;
 
     Email.send({
-        SecureToken: "85b24500-e83f-4809-b5c2-ffe51a07cadc",
-        To: 'apsolutions333@gmail.com',
-        From: 'apsolutions333@gmail.com',
+        SecureToken: "177c6b29-be10-45d2-bc6e-2a4d2cdc0bd1",
+        To: 'info.bondableaccserv@gmail.com',
+        From: 'info.bondableaccserv@gmail.com',
         Subject: "New Inquiry Form",
         Body: bodyMsg
     }).then(
         message => {
             if (message == "OK") {
-                swal("Secussful", "We will contact you soon!", "success");
+                swal("Successful", "We will contact you soon!", "success");
             }
             else {
                 swal("Error", "Something Wrong!", "error");
